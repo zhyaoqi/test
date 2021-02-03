@@ -184,6 +184,7 @@
              TclRouter.openLog();
              TclRouter.openDebug();//因为有缓存，在调试的时候，如果不开启这个设置，涉及到组件有变更，会不能实时更新
         }
+        TclRouter.init(this);
     ```
 
 2. 依赖组件
