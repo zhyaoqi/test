@@ -26,10 +26,6 @@
     //当找不到实现类或不需要实现时，会得到一个方法函数都是空实现的实现类  
     TclRouter.getInstance().getComponent(TclComponentAService.class,"/componentA/serviceImpl");
 
-    //根据组件的接口和路径获取组件，适用于组件端提供了多种实现，需要用路径区分  
-    //当找不到实现类或不需要实现时，会得到一个方法函数都是空实现的实现类  
-    TclRouter.getInstance().getComponent(TclComponentAService.class,"/componentA/serviceImpl");
-
     //设置不需要实现的组件-设置单个  
     TclRouter.getInstance().setUnableComponent(TclComponentAService.class);
 
