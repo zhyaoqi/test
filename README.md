@@ -50,12 +50,12 @@
     方法：init()，当获取组件时会调用
 
 5. @interface Route  
-    路由注解，用于组件接口的实现类
+    路由注解，用于组件接口的实现类，作用在类上面
 
     path:定义组件实现类的路径，至少需要有两级，/xx/xx；必须要赋值
 
 6. @interface Autowired  
-    自动获取组件接口的实现类的注解，需要和注入方法TclRouter.getInstance().inject(this)一起使用
+    自动获取组件接口的实现类的注解，需要和注入方法TclRouter.getInstance().inject(this)一起使用，作用在成员变量上面
 
     path:定义组件实现类的路径，当组件实现类只有一个路径时，可以不赋值，会自动找到对应的实现类
 
